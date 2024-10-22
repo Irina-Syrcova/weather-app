@@ -34,7 +34,7 @@
 	display: block;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 320px) {
 	.info {
 		padding-inline: 8px;
 		row-gap: 16px;

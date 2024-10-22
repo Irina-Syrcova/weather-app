@@ -36,6 +36,25 @@
 	color: var(--grey);
 }
 
+@media (min-width: 320px) {
+	.search {
+		width: 230px;
+	}
+	
+	.search__input {
+		padding: 8px 12px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.search__button {
+		top: 8px;
+		right: 12px;
+		width: 16px;
+		height: 16px;
+	}
+}
+
 @media (min-width: 375px) {
 	.search {
 		width: 263px;

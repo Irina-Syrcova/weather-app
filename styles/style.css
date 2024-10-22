@@ -32,6 +32,13 @@
 	font-variant-numeric: lining-nums;
 }
 
+@media (min-width: 320px) {
+	.body {
+		min-width: 320px;
+		padding: 8px;
+	}
+}
+
 @media (min-width: 375px) {
 	.body {
 		min-width: 375px;

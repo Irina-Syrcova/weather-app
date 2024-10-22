@@ -4,6 +4,12 @@
 	border-radius: 8px;
 }
 
+@media (min-width: 320px) {
+	.container {
+		max-width: 300px;
+	}
+}
+
 @media (min-width: 375px) {
 	.container {
 		max-width: 343px;

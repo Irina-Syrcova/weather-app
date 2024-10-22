@@ -12,7 +12,7 @@
 	color: var(--dark-grey);	
 }
 
-@media (min-width: 375px) {
+@media (min-width: 320px) {
 	.weather-today {
 		padding: 16px;
 		flex-direction: column;
@@ -21,6 +21,7 @@
 
 	.weather-today__list {
 		gap: 8px;
+		justify-content: center;
 	}
 }
 

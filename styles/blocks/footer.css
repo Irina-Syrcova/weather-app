@@ -11,7 +11,7 @@
 	text-decoration-line: underline;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 320px) {
 	.footer {
 		padding: 16px;
 	}
