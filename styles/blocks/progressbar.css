@@ -1,0 +1,19 @@
+.progressbar {
+	border-radius: 8px;
+}
+
+.progressbar_hidden {
+	display: none;
+}
+
+@media (min-width: 375px) {
+	.progressbar {
+		height: 6px;
+	}
+}
+
+@media (min-width: 768px) {
+	.progressbar {
+		height: 8px;
+	}
+}

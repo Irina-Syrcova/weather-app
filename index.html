@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WeatherApp</title>
+		<link rel="shortcut icon" href="./public/icons/day/day-scattered-clouds.svg" type="svg">
+		<link rel="stylesheet" href="./styles/style.css">
+		<script defer type="module" src="./scripts/main.js"></script>
+	</head>
+	<body class="body">
+		<div class="container">
+			<header class="header">
+				<a href="index.html" class="header__logo"></a>
+				<form class="search">
+					<input type="text" class="search__input" placeholder="Поиск по городу">
+					<button type="reset" class="search__button"></button>
+				</form>
+			</header>
+		<main class="main">
+			<section class="weather-today">
+				<article class="info">
+					<div class="info__date">
+						<h2 class="info__date-location"></h2>
+						<p class="info__date-day"></p>
+						<p class="info__date-time"></p>
+					</div>
+					<span class="info__temp"></span>
+					<div class="info__other">
+						<div class="info__other-weather">
+							<img class="info__other-image">
+							<p class="info__other-text"></p>
+						</div>
+						<p class="info__other-feel"></p>
+					</div>
+				</article>
+				<ul class="weather-today__list"></ul>
+			</section>
+			<section class="slider">
+				<nav class="slider__nav">
+					<h3 class="slider__nav-title">Прогноз: </h3>
+					<a class="slider__nav-link slider__nav-link_active slider__nav-link_hours" href="#!">на 24 часа</a>
+					<a class="slider__nav-link slider__nav-link_days" href="#!">на 5 дней</a>
+				</nav>
+				<div class="switch">
+					<button disabled class="switch__button switch__button_left">
+						<svg id="button-left" class="switch__button-image" fill="none" stroke="#545454" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<use href="./public/slider/button-left.svg#button-left"></use>
+						</svg>
+					</button>
+					<ul class="switch__list switch__list_hours"></ul>
+					<ul class="switch__list switch__list_hidden switch__list_days"></ul>
+					<button class="switch__button switch__button_right">
+						<svg id="button-right" class="switch__button-image" fill="none" stroke="#545454" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<use href="./public/slider/button-right.svg#button-right"></use>
+						</svg>
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="footer__text">Проект выполнен в рамках стажировки 
+				<a class="footer__link" target="_blank" href="https://preax.ru">PREAX</a>
+			</p>
+		</footer>
+		<template id="more-details-template">
+			<li class="more-details">
+				<div class="more-details__values">
+					<h3 class="more-details__values-title"></h3>
+					<img src="" alt="" class="more-details__values-image">
+					<span class="more-details__values-value"></span>
+				</div>
+				<div class="more-details__bar">
+					<div class="progressbar"></div>
+					<div class="more-details__container">
+						<span class="more-details__text more-details__text_first"></span>
+						<span class="more-details__text more-details__text_second"></span>
+					</div>
+				</div>
+			</li>
+		</template>
+		<template id="switch-template">
+			<li class="switch__card">
+				<time class="switch__card-time"></time>
+				<img class="switch__card-image">
+				<span class="switch__card-text"></span>
+			</li>
+		</template>
+	</body>
+</html>

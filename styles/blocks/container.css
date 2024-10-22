@@ -1,0 +1,41 @@
+.container {
+	margin: 0 auto;
+	backdrop-filter: blur(25px);
+	border-radius: 8px;
+}
+
+@media (min-width: 375px) {
+	.container {
+		max-width: 343px;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+	.container {
+		max-width: 608px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 886px) and (max-width: 1023px) {
+	.container {
+		max-width: 838px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1120px;
+	}
+}

@@ -1,0 +1,40 @@
+.footer {
+	text-align: center;
+}
+
+.footer__text {
+	color: var(--smoky-white);
+}
+
+.footer__link {
+	color: var(--smoky-white);
+	text-decoration-line: underline;
+}
+
+@media (min-width: 375px) {
+	.footer {
+		padding: 16px;
+	}
+	
+	.footer__text {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		padding: 24px;
+	}
+	
+	.footer__text {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.footer {
+		padding: 32px;
+	}
+}
